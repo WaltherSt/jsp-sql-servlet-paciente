@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile 'jakarta.platform:jakarta.jakartaee-web-api:10.0.0'
+    implementation 'com.microsoft.sqlserver:mssql-jdbc:6.1.0.jre7'
+    
+    testImplementation     'junit:junit:4.13'
+}
